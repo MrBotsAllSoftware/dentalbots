@@ -1,0 +1,106 @@
+/*==================== (ESTILOS PARA EL TEAM) ====================*/
+.team {
+    margin-top: 8rem;
+}
+.team .contenedor {
+    width: 80%;
+}
+.team .contenedor h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+.list__team {
+    display: grid;
+    gap: 4rem;
+}
+@media (min-width: 768px) {
+    .list__team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .list__team {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+.perfil {
+    /* width: 100%; */
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    grid-template-columns: 10rem 1fr;
+    background: var(--white);
+    position: relative;
+    border-radius: .4rem;
+}
+.perfil:hover {
+    background: linear-gradient(to bottom, #34b8c0 0%, #6f51c7 100%);;
+}
+@media (min-width: 768px) {
+    .perfil {
+        width: 30rem;
+    }
+}
+.perfil__photo {
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 50%;
+    left: -50px;
+    transform: translateY(-50%);
+    border: solid 6px var(--body);
+    border-radius: 50%;
+}
+.perfil__photo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.perfil__info {
+    width: 100%;
+    position: relative;
+    margin-left: 8rem;
+}
+.perfil__info h4 {
+    margin-bottom: 0;
+    color: var(--blue);
+    transition: .3s ease-in-out;
+}
+
+.perfil:hover .perfil__info h4,
+.perfil:hover .perfil__info span,
+.perfil:hover .perfil__info p {
+    color: var(--white);
+    opacity: 1;
+}
+.perfil__info h4:hover {
+    color: var(--blue2);
+}
+.perfil__info span,
+.perfil__info p {
+    opacity: .6;
+}
+.redes {
+    display: flex;
+    align-items: center;
+}
+.redes a {
+    margin-right: 1rem;
+    width: 4rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 2px var(--blue);
+    color: var(--blue);
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+}
+.perfil:hover .redes a {
+    border: solid 2px var(--white);
+    color: var(--white);
+}
+.redes a:last-of-type {
+    margin: 0;
+}

@@ -1,0 +1,19 @@
+/*==================== (ESTILOS PARA EL FOOTER) ====================*/
+.footer {
+    margin-top: 4rem;
+    padding: 2rem;
+}
+
+.footer .contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer .contenedor h4 {
+    display: flex;
+    align-items: center;
+}
+.footer .contenedor h4 a {
+    margin-left: .2rem;
+    color: var(--blue);
+}

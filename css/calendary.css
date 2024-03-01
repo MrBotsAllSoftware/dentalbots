@@ -1,0 +1,133 @@
+/*==================== (ESTILOS PARA EL CALENDARIO DE CITAS) ====================*/
+.calendary {
+    margin-top: 4rem;
+}
+.calendary .contenedor {
+    width: 80%;
+}
+.header__calendary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__calendary a {
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.header__calendary h2 {
+    text-transform: uppercase;
+}
+
+.list__citas {
+    margin-top: 4rem;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 464px) {
+    .list__citas {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width: 600px) {
+    .list__citas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+@media (min-width: 740px) {
+    .list__citas {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (min-width: 768px) {
+    .list__citas {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .list__citas {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+
+@media (min-width: 1200px) {
+    .list__citas {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+.list__citas  .citas__item {
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3rem;
+    transition: .3s ease-in-out;
+
+}
+.list__citas  .citas__item.active {
+    background: var(--blue2);
+}
+.list__citas  .citas__item:hover {
+    background: var(--blue2);
+}
+
+.list__citas  div a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.citas__item span {
+    /* margin-top: 2rem; */
+    font-weight: bold;
+}
+.citas__item a span.active  {
+    color: var(--white);
+}
+.estado {
+    color: var(--blue);
+    font-weight: bold;
+    margin-top: 2rem;
+    margin-bottom: 0;
+    padding: 0;
+}
+.estado.active {
+    color: var(--white);
+}
+
+.soli {
+    padding: .2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--blue);
+    display: inline-block;
+    border: solid 2px var(--blue);
+    border-radius: 3rem;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}
+.soli.active {
+    color: var(--white);
+    border: solid 2px var(--white);
+}
+.list__citas  .citas__item:hover a span,
+.list__citas  .citas__item:hover .estado,
+.list__citas  .citas__item:hover .soli {
+    color: var(--white);
+    
+}
+.list__citas  .citas__item:hover .soli {
+    border: solid 2px var(--white);
+}

@@ -1,0 +1,44 @@
+/*==================== (Fuentes Google Fonts) ====================*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Damion&display=swap');
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+  }
+/*==================== (Variables) ====================*/
+:root {
+    /*==================== (Colores) ====================*/
+    --black: #000;
+    --white: #fff;
+    --blue: #34b8c0;
+    --blue2: #6f51c7;
+    --body: #f9f9f9;
+    --btnSubmit: #6f51c7;
+    /*==================== (Fuentes) ====================*/
+    --fontLato: 'Lato', sans-serif;
+    --fontDamion: 'Damion', cursive;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: var(--fontLato);
+    background: var(--body);
+    margin: 0;
+}
+
+.contenedor {
+    width: 95%;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+}
+img {
+    max-width: 100%;
+}

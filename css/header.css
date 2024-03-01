@@ -1,0 +1,119 @@
+/*==================== (ESTILOS PARA EL HEADER) ====================*/
+.header__main {
+    background: var(--white);
+    padding-bottom: 4rem;
+}
+@media (min-width: 768px) {
+    .header__main {
+        padding-bottom: 0;
+    }
+}
+.barra__header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+
+.logo {
+    width: 8rem;
+    height: 8rem;
+    margin-right: 1rem;
+}
+.logo > img {
+    width: 100%;
+    height: 100%;
+}
+.logo__name {
+    font-size: 5rem;
+    font-weight: 700;
+    color: var(--blue);
+}
+.logo__name i {
+    font-weight: 100;
+    font-family: var(--fontDamion);
+}
+.bar__nav {
+    width: 100%;
+    position: relative;
+}
+@media (min-width: 768px) {
+    .bar__nav {
+        display: none;
+    }
+}
+.bar__nav i {
+    position: absolute;
+    right: 15px;
+    font-size: 3rem;
+    color: var(--blue);
+    cursor: pointer;
+}
+.nav__main {
+    width: 100%;
+    height: 0;
+    padding: 0;
+    margin-top: 6rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    background: var(--blue);
+    transition: .4s ease-in-out;
+
+}
+.nav__main.active {
+    display: flex;
+    height: 22rem;
+}
+@media (min-width: 768px) {
+    .nav__main {
+        background: transparent;
+        width: auto;
+        margin-top: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 2.5rem 0 1.7rem;
+    }
+    .nav__main.active {
+        height: auto;
+    }
+}
+.nav__main a {
+    margin-bottom: .5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    padding: .5rem 2rem;
+    border-radius: 1.5rem;
+    transition: .3s ease-in-out;
+    color: var(--white);
+    
+}
+@media (min-width: 768px) {
+    .nav__main a {
+        margin-right: .5rem;
+        margin-bottom: 0;
+        color: var(--black);
+        text-transform: uppercase;
+        font-size: 1.4rem;
+    }
+
+    .nav__main a.active {
+        background: var(--blue2);
+        color: var(--white);
+    }
+    .nav__main a:hover {
+        background: var(--blue2);
+        color: var(--white);
+    }
+}
+
+.nav__main a:last-of-type {
+    margin: 0;
+}

@@ -1,0 +1,79 @@
+/*==================== (ESTILOS PARA LA SECCION CONTACTO) ====================*/
+.contact {
+    background: linear-gradient(to bottom,rgba(52,184,192,0.9) 0%,rgba(111,81,199,0.9) 100%);
+    padding-bottom: 4rem;
+}
+.contact .contenedor {
+    width: 70%;
+}
+.contact .contenedor h2 {
+    margin-top: 0;
+    padding-top: 4rem;
+    text-align: center;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+
+.row {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .row {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.form__campo {
+    display: grid;
+}
+.form__campo input {
+    /* display: block; */
+    width: 100%;
+    border: solid 2px var(--white);
+    background: rgb(255 255 255 / 0%);
+    background-image: none;
+    color: var(--white);
+    outline: none;
+    border-radius: 3rem;
+    height: 5.4rem;
+    padding-left: 3rem;
+    padding: .6rem 1.2rem;
+}
+
+
+.form__campo input:last-child {
+    grid-column: 4 / 1;
+}
+.form__campo .btn__submit {
+    width: 100%;
+    background: var(--btnSubmit);
+    color: var(--white);
+    cursor: pointer;
+    padding-left: 0;
+    border: none;
+    grid-column: 4 / 2;
+    transition: .3s ease-in-out;
+}
+.form__campo .btn__submit:hover {
+    background: rgb(255 255 255 / 40%);
+}
+
+.form__campo input::placeholder,
+.form__campo textarea::placeholder {
+    color: var(--white);
+    font-family: var(--fontLato);
+}
+.form__campo textarea {
+    width: 100%;
+    border: solid 2px var(--white);
+    padding-top: 1.2rem;
+    padding-bottom: 1.7rem;
+    border-radius: 2rem;
+    resize: none;
+    background: transparent;
+    padding-left: 2rem;
+    outline: none;
+    color: var(--white);
+}
